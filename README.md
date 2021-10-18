@@ -30,7 +30,7 @@ None
 
 The best way to understand the "ojet" philosophy is to see the wrapper in action within jupyter. You will learn very easily how to build sophisticated reports with a few lines of code.
 
-The example is [here](http://gduvalsc>.github.io/ojet.html).
+The example is [here](http://gduvalsc.github.io/ojet.html).
 
 Outside jupyter the general usage is
 
