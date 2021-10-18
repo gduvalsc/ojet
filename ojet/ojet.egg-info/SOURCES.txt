@@ -1,8 +1,0 @@
-README.rst
-setup.py
-ojet/__init__.py
-ojet.egg-info/PKG-INFO
-ojet.egg-info/SOURCES.txt
-ojet.egg-info/dependency_links.txt
-ojet.egg-info/not-zip-safe
-ojet.egg-info/top_level.txt

@@ -1,0 +1,78 @@
+<html><head><meta charset="utf-8"/><meta keywords="cpu"/><meta name="description" content="Charts showing cpu data from exawatcher"/><style type="text/css">
+            @import url('https://static.oracle.com/cdn/jet/11.1.0/default/css/redwood/oj-redwood-min.css');
+            @import url('https://static.oracle.com/cdn/fnd/gallery/2107.3.0/images/iconfont/ojuxIconFont.min.css');
+        </style><script src="https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require/require.js"></script><script type="text/javascript">
+              var browserLang = window.navigator.language || window.navigator.userLanguage;
+              requirejs.config({
+                paths: {
+                    'knockout': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/knockout/knockout-3.5.1',
+                    'jquery': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/jquery/jquery-3.6.0.min',
+                    'jqueryui-amd': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/jquery/jqueryui-amd-1.12.1.min',
+                    'hammerjs': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/hammer/hammer-2.0.8.min',
+                    'ojdnd': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/dnd-polyfill/dnd-polyfill-1.0.2.min',
+                    'ojs': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/min',
+                    'ojL10n': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/ojL10n',
+                    'ojtranslations': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/resources',
+                    'preact': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/preact/dist/preact.umd',
+                    'text': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require/text',
+                    'signals': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/js-signals/signals.min',
+                    'touchr': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/touchr/touchr',
+                    'customElements': 'https://static.oracle.com/cdn/jet/v8.3.0/3rdparty/webcomponents/custom-elements.min',
+                    'css': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require-css/css.min'
+                },
+                config: {
+                  i18n: { locale: browserLang },
+                  ojL10n: { locale: browserLang }
+                }
+              });
+      </script><script type="text/javascript">
+                require(['knockout', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojlabel', 'ojs/ojtoolbar', 'ojs/ojbutton'],
+                function (p0,p1,p2,p3,p4,p5)
+                {
+                    
+                class g35lb_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class tb35_OjetClass {
+                    constructor() {
+                    
+              this.someButtons = [
+                  { id: "Library", icon: "oj-ux-ico-library" },
+                  { id: "Home", icon: "oj-ux-ico-home" },
+                  { id: "Grid", icon: "oj-ux-ico-grid-view-small" },
+              ];
+
+                    }
+                }
+            
+                class b351_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class b352_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class b353_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                    p1.whenDocumentReady().then(() => {
+                        
+p0.applyBindings(new g35lb_OjetClass(), document.getElementById("g35lb_container"));
+p0.applyBindings(new tb35_OjetClass(), document.getElementById("tb35_container"));
+p0.applyBindings(new b351_OjetClass(), document.getElementById("b351_container"));
+p0.applyBindings(new b352_OjetClass(), document.getElementById("b352_container"));
+p0.applyBindings(new b353_OjetClass(), document.getElementById("b353_container"));
+                    });
+                });
+        </script></head><body><h6>Toolbar</h6><span id="g35lb_container"><oj-label>Toolbar with outlined buttons</oj-label></span><span id="tb35_container"><oj-toolbar aria-label="Editing Toolbar" aria-controls="controlled"></oj-toolbar><span id="b351_container"><oj-button display="icons"><span slot="startIcon" class="oj-ux-ico-chat"></span>Chat</oj-button></span><span id="b352_container"><oj-button display="icons"><span slot="startIcon" class="oj-ux-ico-color-palette"></span>Paint</oj-button></span><span id="b353_container"><oj-button display="icons" disabled="true"><span slot="startIcon" class="oj-ux-ico-bookmark-selected"></span>Bookmark</oj-button></span><span role="separator" ariaéorientation="vertical" class="oj-toolbar-separator"></span><oj-buttonset-many id="checkWrapper1" focusémanagement="none"><oj-option id="toggle1">Toggle</oj-option></oj-buttonset-many><oj-menu-button id="menuButton1">Menu Button<oj-menu id="myMenu1" slot="menu"><oj-option id="save1" value="Save"><span class="oj-ux-ico-save" slot="startIcon"></span>Save</oj-option><oj-option id="zoomin1" value="Zoom In"><span class="oj-ux-ico-zoom-in" slot="startIcon"></span>Zoom In</oj-option><oj-option id="zoomout1" value="Zoom Out"><span class="oj-ux-ico-zoom-out" slot="startIcon"></span>Zoom Out</oj-option><oj-option id="print1" value="Print" disabled="true"><span class="oj-ux-ico-print" slot="startIcon"></span>Print</oj-option></oj-menu></oj-menu-button><span role="separator" ariaéorientation="vertical" class="oj-toolbar-separator"></span><oj-buttonset-many id="iconset1" display="icons" focusémanagement="none"><oj-bind-for-each data="[[someButtons]]"><template><oj-option value="[[$current.data.id]]"><span slot="startIcon" :class="[[$current.data.icon]]"></span><span><oj-bind-text value="[[$current.data.id]]"></oj-bind-text></span></oj-option></template></oj-bind-for-each></oj-buttonset-many></span></body></html>

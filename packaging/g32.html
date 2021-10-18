@@ -1,0 +1,86 @@
+<html><head><meta charset="utf-8"/><meta keywords="cpu"/><meta name="description" content="Charts showing cpu data from exawatcher"/><style type="text/css">
+            @import url('https://static.oracle.com/cdn/jet/11.1.0/default/css/redwood/oj-redwood-min.css');
+            @import url('https://static.oracle.com/cdn/fnd/gallery/2107.3.0/images/iconfont/ojuxIconFont.min.css');
+        </style><script src="https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require/require.js"></script><script type="text/javascript">
+              var browserLang = window.navigator.language || window.navigator.userLanguage;
+              requirejs.config({
+                paths: {
+                    'knockout': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/knockout/knockout-3.5.1',
+                    'jquery': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/jquery/jquery-3.6.0.min',
+                    'jqueryui-amd': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/jquery/jqueryui-amd-1.12.1.min',
+                    'hammerjs': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/hammer/hammer-2.0.8.min',
+                    'ojdnd': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/dnd-polyfill/dnd-polyfill-1.0.2.min',
+                    'ojs': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/min',
+                    'ojL10n': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/ojL10n',
+                    'ojtranslations': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/resources',
+                    'preact': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/preact/dist/preact.umd',
+                    'text': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require/text',
+                    'signals': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/js-signals/signals.min',
+                    'touchr': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/touchr/touchr',
+                    'customElements': 'https://static.oracle.com/cdn/jet/v8.3.0/3rdparty/webcomponents/custom-elements.min',
+                    'css': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require-css/css.min'
+                },
+                config: {
+                  i18n: { locale: browserLang },
+                  ojL10n: { locale: browserLang }
+                }
+              });
+      </script><script type="text/javascript">
+                require(['knockout', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojgauge'],
+                function (p0,p1,p2,p3)
+                {
+                    
+                class g321_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class g322_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class g323_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class g324_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class g325_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class g326_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class g327_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                    p1.whenDocumentReady().then(() => {
+                        
+p0.applyBindings(new g321_OjetClass(), document.getElementById("g321_container"));
+p0.applyBindings(new g322_OjetClass(), document.getElementById("g322_container"));
+p0.applyBindings(new g323_OjetClass(), document.getElementById("g323_container"));
+p0.applyBindings(new g324_OjetClass(), document.getElementById("g324_container"));
+p0.applyBindings(new g325_OjetClass(), document.getElementById("g325_container"));
+p0.applyBindings(new g326_OjetClass(), document.getElementById("g326_container"));
+p0.applyBindings(new g327_OjetClass(), document.getElementById("g327_container"));
+                    });
+                });
+        </script></head><body><table><tr><td><p>Default with no label:</p></td><td><span id="g321_container"><oj-led-gauge value="27"></oj-led-gauge></span></td></tr><tr><td><p>Default with label:</p></td><td><span id="g322_container"><oj-led-gauge value="35" metric-label.rendered="on" metric-label.style='{"color":"yellow"}'></oj-led-gauge></span></td><td><span id="g323_container"><oj-led-gauge value="40" metric-label.rendered="on" metric-label.text-type="percent"></oj-led-gauge></span></td><td><span id="g324_container"><oj-led-gauge value="50" metric-label.rendered="on" metric-label.text="LED" metric-label.style='{"color":"aqua"}'></oj-led-gauge></span></td></tr><tr><td><p>Type:</p></td><td><span id="g325_container"><oj-led-gauge value="35" type="triangle" metric-label.rendered="on"></oj-led-gauge></span></td><td><span id="g326_container"><oj-led-gauge value="40" type="rectangle" metric-label.rendered="on"></oj-led-gauge></span></td></tr><tr><td><p>Color:</p></td><td><span id="g327_container"><oj-led-gauge value="35" color="red" metric-label.rendered="on"></oj-led-gauge></span></td></tr></table></body></html>

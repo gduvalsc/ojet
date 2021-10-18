@@ -171,8 +171,9 @@ class Ojet:
         return self.controlrequires()
     
     def jupyter(self, width=800, height=450, name='jupyter.html'):
+        from IPython.display import IFrame as ifr, display
         with open(f'./{name}', 'w') as f: f.write(self.render())
-        display(IFrame(f'./{name}', width=width, height=height))
+        display(ifr(f'./{name}', width=width, height=height))
 
     def render(self):
         

@@ -1,0 +1,130 @@
+<html><head><meta charset="utf-8"/><meta keywords="cpu"/><meta name="description" content="Charts showing cpu data from exawatcher"/><style type="text/css">
+            @import url('https://static.oracle.com/cdn/jet/11.1.0/default/css/redwood/oj-redwood-min.css');
+            @import url('https://static.oracle.com/cdn/fnd/gallery/2107.3.0/images/iconfont/ojuxIconFont.min.css');
+        </style><script src="https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require/require.js"></script><script type="text/javascript">
+              var browserLang = window.navigator.language || window.navigator.userLanguage;
+              requirejs.config({
+                paths: {
+                    'knockout': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/knockout/knockout-3.5.1',
+                    'jquery': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/jquery/jquery-3.6.0.min',
+                    'jqueryui-amd': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/jquery/jqueryui-amd-1.12.1.min',
+                    'hammerjs': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/hammer/hammer-2.0.8.min',
+                    'ojdnd': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/dnd-polyfill/dnd-polyfill-1.0.2.min',
+                    'ojs': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/min',
+                    'ojL10n': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/ojL10n',
+                    'ojtranslations': 'https://static.oracle.com/cdn/jet/11.1.0/default/js/resources',
+                    'preact': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/preact/dist/preact.umd',
+                    'text': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require/text',
+                    'signals': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/js-signals/signals.min',
+                    'touchr': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/touchr/touchr',
+                    'customElements': 'https://static.oracle.com/cdn/jet/v8.3.0/3rdparty/webcomponents/custom-elements.min',
+                    'css': 'https://static.oracle.com/cdn/jet/11.1.0/3rdparty/require-css/css.min'
+                },
+                config: {
+                  i18n: { locale: browserLang },
+                  ojL10n: { locale: browserLang }
+                }
+              });
+      </script><script type="text/javascript">
+                require(['knockout', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojbutton'],
+                function (p0,p1,p2,p3)
+                {
+                    
+                class button1_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button2_OjetClass {
+                    constructor() {
+                    
+
+                            this.buttonClick = (event) => {
+                                this.clickedButton(event.currentTarget.id);
+                                alert("Button 2");
+                                return true;
+                            };
+                            this.button2Text = "Button 2";
+                            this.clickedButton = p0.observable("(None clicked yet)");
+
+                    }
+                }
+            
+                class button3_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button4_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button5_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button6_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button7_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button8_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button9_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button10_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button11_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                class button12_OjetClass {
+                    constructor() {
+                    
+                    }
+                }
+            
+                    p1.whenDocumentReady().then(() => {
+                        
+p0.applyBindings(new button1_OjetClass(), document.getElementById("button1_container"));
+p0.applyBindings(new button2_OjetClass(), document.getElementById("button2_container"));
+p0.applyBindings(new button3_OjetClass(), document.getElementById("button3_container"));
+p0.applyBindings(new button4_OjetClass(), document.getElementById("button4_container"));
+p0.applyBindings(new button5_OjetClass(), document.getElementById("button5_container"));
+p0.applyBindings(new button6_OjetClass(), document.getElementById("button6_container"));
+p0.applyBindings(new button7_OjetClass(), document.getElementById("button7_container"));
+p0.applyBindings(new button8_OjetClass(), document.getElementById("button8_container"));
+p0.applyBindings(new button9_OjetClass(), document.getElementById("button9_container"));
+p0.applyBindings(new button10_OjetClass(), document.getElementById("button10_container"));
+p0.applyBindings(new button11_OjetClass(), document.getElementById("button11_container"));
+p0.applyBindings(new button12_OjetClass(), document.getElementById("button12_container"));
+                    });
+                });
+        </script></head><body><h6>Text Button</h6><span id="button1_container"><oj-button>Button text 1</oj-button></span><span id="button2_container"><oj-button on-oj-action="[[buttonClick]]"><span><oj-bind-text value="[[button2Text]]"></oj-bind-text></span></oj-button></span><h6>Button with icon</h6><span id="button3_container"><oj-button display="icons">Icon Button<span slot="startIcon" class="oj-ux-ico-information"></span></oj-button></span><span id="button4_container"><oj-button><span slot="startIcon" class="oj-ux-ico-avatar"></span>Start Slot</oj-button></span><span id="button5_container"><oj-button>End Slot<span slot="endIcon" class="oj-ux-ico-avatar"></span></oj-button></span><h6>Disabled button</h6><span id="button6_container"><oj-button disabled="true">Disabled</oj-button></span><span id="button7_container"><oj-button disabled="true" display="icons">Disabled Icon<span slot="startIcon" class="oj-ux-ico-delete-circle"></span></oj-button></span><h6>Chroming button</h6><span id="button8_container"><oj-button chroming="borderless">Borderless</oj-button></span><span id="button9_container"><oj-button chroming="outlined">Outlined</oj-button></span><span id="button10_container"><oj-button chroming="solid">Solid</oj-button></span><span id="button11_container"><oj-button chroming="callToAction">Call to Action</oj-button></span><span id="button12_container"><oj-button chroming="danger">Danger</oj-button></span></body></html>
