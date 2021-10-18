@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: ojet-gduvalsc
-Version: 0.11.0.dev0
+Name: ojet
+Version: 0.11.3
 Summary: ojet: a wrapper around Oracle JET
 Home-page: https://github.com/gdsc/ojet
 Author: Gerard DUVAL
