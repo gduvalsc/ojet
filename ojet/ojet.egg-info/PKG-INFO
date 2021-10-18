@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: ojet
+Version: 0.11.0
+Summary: Create wrapper around Oracle Jet to hide as much as possible HTML and Javascript
+Home-page: https://github.com/gduvalsc/ojet
+Author: Gerard Duval
+Author-email: gerard.duval@gdsoftconsulting.com
+License: GPL
+Description: Introduction
+        ------------
+        
+        Oracle JET is a great HTML application builder. The only flaw of this generator is the need to know both HTML and JAVASCRIPT!
+        This "ojet" package is a PYTHON3 wrapper around Oracle JET. Its aim is to hide as much as possible the complexity of the HTML and JACASCRIPT code.
+        Furthurmore "ojet" can be included in a jupyter notebook in order to add sophisticated HTML views or to help to test an "ojet" application.
+        
+        License
+        ------------
+        
+        "ojet" itself has a GNU general license, but the result of "ojet" must conform to the rules edicted by Oracle about the "Oracle JET" license.
+        
+        Installation
+        ------------
+        
+        Install, upgrade and uninstall ojet with the following commands:
+        
+        ::
+        
+            $ pip3 install ojet
+            $ pip3 install --upgrade ojet
+            $ pip3 uninstall ojet
+        
+        Dependencies
+        ------------
+        
+        IPython in order to use "ojet" in a jupyter notebook
+        
+        Documentation
+        -------------
+        
+        There is no specific documentation about ojet except the jupyter notebook attached.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
