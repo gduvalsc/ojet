@@ -24,8 +24,23 @@ Install, upgrade and uninstall ojet with the following commands:
 
 ### Dependencies
 
-IPython is needed when "ojet" is used in a jupyter notebook
+None
 
 ### Documentation
 
-There is no specific documentation about ojet except the jupyter notebook attached.
+The best way to understand the "ojet" philosophy is to see the wrapper in action within jupyter. You will learn very easily how to build sophisticated reports with a few lines of code.
+
+The example is [here](http://gduvalsc>.github.io/ojet.html).
+
+Outside jupyter the general usage is
+
+::
+
+    oj = Ojet()
+    jsparameters = oj.require("knockout")
+    ...
+    print(oj.render()) # or write the result within an HTML file or generate the page dynamically for any HTTP Python 3 server.
+
+### Warning
+
+"ojet" doesn't include all "HTML" or "Oracle Jet" tags. This first version built over Oracle Jet V11.1.0 is only an example of what can be done with a wrapper. The tool can be easily extended with any tags using examples provided in the package.
